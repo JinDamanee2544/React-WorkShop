@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #121312;
+}
+@layer base {
+  .icon{
+    @apply text-xl ml-3 cursor-pointer 
+  }
+}
+.alert{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: fit-content;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+.alert.error{
+  background: red;
+  color: white;
+}
+.alert.success{
+  background: green;
+  color: white;
+}
